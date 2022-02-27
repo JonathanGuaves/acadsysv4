@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:aasv4/home_screen.dart';
+import 'package:aasv4/forgotpass.dart';
 
 class LoginScreen extends StatefulWidget
 {
@@ -175,7 +176,16 @@ class InitState extends State<LoginScreen>
                       child: GestureDetector
                         (
                           child: Text("Forgot Password?"),
-                          onTap: () => {},
+                          onTap: () =>
+                          {
+                            Navigator.pushReplacement
+                              (
+                                context, MaterialPageRoute
+                                  (
+                                    builder: (context) => ForgotPass()
+                                  )
+                              )
+                          },
                         ),
                     ),
 

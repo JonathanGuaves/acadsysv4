@@ -141,6 +141,11 @@ class InitState extends State<MakeAppt>
 
                   Container
                     (
+
+                    ),
+
+                  Container
+                    (
                       margin: EdgeInsets.only(left: 25, top: 270),
                       alignment: Alignment.centerLeft,
 
@@ -198,21 +203,17 @@ class InitState extends State<MakeAppt>
                       (
                         alignment: Alignment.center,
                         margin: EdgeInsets.only(left: 25, top: 350),
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
 
                         height: 150,
 
-
                         decoration: BoxDecoration
                         (
-
-                          borderRadius: BorderRadius.circular(25),
-
+                          borderRadius: BorderRadius.circular(25)
                         ),
 
                         child: TextField
                           (
-
                             style: TextStyle
                               (
                                 backgroundColor: Colors.white,

@@ -1,5 +1,6 @@
 import 'package:aasv4/adv_sched.dart';
 import 'package:aasv4/mapt.dart';
+import 'package:aasv4/notif_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:aasv4/login_screen.dart';
 
@@ -216,7 +217,13 @@ class InitState extends State<HomeScreen>
                       (
                       onTap: () =>
                       {
-
+                        Navigator.pushReplacement
+                          (
+                            context, MaterialPageRoute
+                              (
+                                builder: (context) => NotificationView()
+                              )
+                          )
                       },
 
                       child: Container
